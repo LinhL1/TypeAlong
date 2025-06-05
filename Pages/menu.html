@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Practice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <input type="file" id="songFile" accept="audio/*" />
+  <audio id="audio" controls></audio>
+
+  <textarea id="lyricsInput" placeholder="Paste lyrics here..."></textarea>
+  <button id="startTyping">Start Practice</button>
+
+  <div id="lyricsDisplay"></div>
+  <input type="text" id="typingInput" placeholder="Type here..." disabled autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+
+  <div id="stats">
+    <div>WPM: <span id="wpm">0</span></div>
+  </div>
+
+  <script src="typing.js"></script>
+</body>
+</html>
