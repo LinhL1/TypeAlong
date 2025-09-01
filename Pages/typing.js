@@ -44,7 +44,7 @@ typingInput.addEventListener('input', () => {
 
   totalTypedChars += 1;
 
-  // Calculate correct characters in this input
+  // calculate correct characters in this input
   let correctCharsThisInput = 0;
   for (let i = 0; i < typed.length; i++) {
     if (typed[i] === currentLine[i]) {
@@ -65,12 +65,12 @@ typingInput.addEventListener('input', () => {
     if (currentLineIndex < lyricsLines.length) {
       typingInput.value = '';
       updateLyricsDisplay();
-      startTime = null; // Reset timer for next line (optional)
+      startTime = null; // Reset timer for next line
       totalTypedChars = 0;
       document.getElementById('wpm').textContent = '0';
     } else {
       typingInput.disabled = true;
-      lyricsDisplay.innerHTML = "🎉 You've completed the lyrics!";
+      lyricsDisplay.innerHTML = "Completed!";
     }
   }
 });
